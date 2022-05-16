@@ -2,13 +2,13 @@ import React from "react";
 
 function Card(props) {
     return (
-        <div>
+        <div className='cards'>
             <h2>{props.name}</h2>
             <img 
                 src={props.img}
                 alt="avatar_img"
             />
-            <p>{props.tel}</p>
+            <p>{props.phone}</p>
             <p>{props.email}</p>
         </div>
     );

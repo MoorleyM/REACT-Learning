@@ -8,6 +8,8 @@ import Notes from './components/notes/note';
 import Card from './components/cards/card.component';
 
 import './home.styles.scss'
+import contacts from './contexts/contacts/contacts.contexts';
+import CreateCard from './components/cards/create-card.componenet';
 
 // Lesson One
 const currentDate = new Date();
@@ -83,9 +85,13 @@ const Home = () => {
                 <Card 
                     name='Jeff Gordon' 
                     img='https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Jeff_gordon_%2847223209121%29.jpg/800px-Jeff_gordon_%2847223209121%29.jpg' 
-                    tel='519-226-7878'
+                    phone='519-226-7878'
                     email='jeff@hotmail.com'
                 />
+            </section>
+            <section className='lesson-eight'>
+                <h1>Mapping through data</h1>
+                {contacts.map(CreateCard)}
             </section>
             <Footer />
         </section>
