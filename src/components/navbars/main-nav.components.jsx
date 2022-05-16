@@ -2,7 +2,9 @@ import React from "react";
 
 function MainNav() {
     return (
-        <h1>Temporary Holder</h1>
+        <header>
+            <h1>Navbar</h1>
+        </header>
     )
 }
 
