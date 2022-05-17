@@ -9,6 +9,7 @@ import Login from './components/authentication/login.component';
 import SignUp from './components/authentication/signup.component';
 import Count from './components/lessons/lesson-ten/count.component';
 import GetTime from './components/lessons/lesson-eleven/using-state.component';
+import CarTable from './components/lessons/lesson-twelve/destructuring.component';
 
 import './home.styles.scss'
 import contacts from './contexts/contacts/contacts.contexts';
@@ -115,6 +116,9 @@ const Home = () => {
                 using the setInterval method.
                 Can you get hte time in your <h1> to update every second? */}
                 <GetTime />
+            </section>
+            <section className='lesson-twelve'>
+                <CarTable />
             </section>
             <Footer />
         </section>
