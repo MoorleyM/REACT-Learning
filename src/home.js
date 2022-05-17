@@ -4,8 +4,9 @@ import ListOne from './components/lists/list-one.component';
 import LessonThree from './components/lessons/lesson-three/lesson-three.component';
 import Footer from './components/footer/footer.component';
 import MainNav from './components/navbars/main-nav.components';
-import Notes from './components/notes/note';
 import Card from './components/cards/card.component';
+import Login from './components/authentication/login.component';
+import SignUp from './components/authentication/signup.component';
 
 import './home.styles.scss'
 import contacts from './contexts/contacts/contacts.contexts';
@@ -37,6 +38,8 @@ if (currentHour < 12) {
     customStyles.color = "blue"
 }
 
+// Lesson nine
+var isLoggedIn = false;
 
 const Home = () => {
     return (
@@ -78,7 +81,6 @@ const Home = () => {
                 5. Create a note.jsx component to show div element with h1 for title and
                 p for content
                 6. Make sure that the final website is styled like the example */}
-                <Notes />
             </section>
             <section className='lesson-seven'>
                 <h1>Props Lesson</h1>
@@ -92,6 +94,10 @@ const Home = () => {
             <section className='lesson-eight'>
                 <h1>Mapping through data</h1>
                 {contacts.map(CreateCard)}
+            </section>
+            <section className='lesson-nine'>
+                {/* {isLoggedIn === true ? <h1>Hello</h1> : <Login />} */}
+                {!isLoggedIn ? <Login /> : <SignUp /> }
             </section>
             <Footer />
         </section>

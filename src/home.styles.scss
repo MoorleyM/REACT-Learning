@@ -6,8 +6,15 @@
 }
 
 .lesson-eight {
+    display: flex;
+    flex-wrap: wrap;
+
     img{
         width: 100px;
         height: 100px;
+    }
+
+    .cards {
+        margin: 20px;
     }
 }
