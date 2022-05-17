@@ -7,6 +7,8 @@ import MainNav from './components/navbars/main-nav.components';
 import Card from './components/cards/card.component';
 import Login from './components/authentication/login.component';
 import SignUp from './components/authentication/signup.component';
+import Count from './components/lessons/lesson-ten/count.component';
+import GetTime from './components/lessons/lesson-eleven/using-state.component';
 
 import './home.styles.scss'
 import contacts from './contexts/contacts/contacts.contexts';
@@ -40,6 +42,7 @@ if (currentHour < 12) {
 
 // Lesson nine
 var isLoggedIn = false;
+
 
 const Home = () => {
     return (
@@ -98,6 +101,20 @@ const Home = () => {
             <section className='lesson-nine'>
                 {/* {isLoggedIn === true ? <h1>Hello</h1> : <Login />} */}
                 {!isLoggedIn ? <Login /> : <SignUp /> }
+            </section>
+            <section className='lesson-ten'>
+                <Count />
+            </section>
+            <section className='lesson-eleven'>
+                {/* Challenge:
+                1. Given that you can get the current time using:
+                let time = new Date().toLocaleTimeString();
+                console.log(time)
+                Show the latest time in the <h1> when the get time button is pressed. */}
+                {/* 2. Given that you can get code to be called every secing
+                using the setInterval method.
+                Can you get hte time in your <h1> to update every second? */}
+                <GetTime />
             </section>
             <Footer />
         </section>
