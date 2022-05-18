@@ -67,7 +67,7 @@ const contacts = [
         id: 10,
         name: 'Lea Seydoux',
         img: 'http://media1.s-nbcnews.com/i/streams/2014/December/141204/1D274907365869-tdy-141204-lea-seydoux-tease.jpg',
-        phone: '226-5264',
+        phone: '226-526-7214',
         email: 'seydoux@gmail.com'
     },
 ]
