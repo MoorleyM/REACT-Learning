@@ -38,6 +38,7 @@ const CarTable = () => {
             <tr>
                 <th>Brand</th>
                 <th>Top Speed</th>
+                <th>Top Colours</th>
             </tr>
             <tr>
                 <td>{tesla.model}</td>

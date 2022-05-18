@@ -10,6 +10,7 @@ import SignUp from './components/authentication/signup.component';
 import Count from './components/lessons/lesson-ten/count.component';
 import GetTime from './components/lessons/lesson-eleven/using-state.component';
 import CarTable from './components/lessons/lesson-twelve/destructuring.component';
+import ComplexState from './components/lessons/lesson-thirteen/complex-state.component';
 
 import './home.styles.scss'
 import contacts from './contexts/contacts/contacts.contexts';
@@ -119,6 +120,9 @@ const Home = () => {
             </section>
             <section className='lesson-twelve'>
                 <CarTable />
+            </section>
+            <section>
+                <ComplexState />
             </section>
             <Footer />
         </section>

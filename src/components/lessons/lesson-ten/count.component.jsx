@@ -22,7 +22,7 @@ const Count = () => {
             <button onClick={Increase} >+</button>
             <button onClick={Decrease} >-</button>
         </div>
-    )
-}
+    );
+};
 
 export default Count;
